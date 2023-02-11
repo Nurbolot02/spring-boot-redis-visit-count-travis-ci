@@ -3,4 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t nurbolot02/spring-redis-mvn
+  - ./mvnw spring-boot:build-image
+
+script:
+  - docker run -p 8080:8080 nurbolot02/spring-boot-docker

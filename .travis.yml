@@ -1,5 +1,4 @@
-dist: jammy
-language: java
+
 sudo: required
 services:
   - docker

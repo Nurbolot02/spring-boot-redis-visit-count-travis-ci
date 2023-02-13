@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
-  - - ./mvnw spring-boot:build-image
+  - ./mvnw spring-boot:build-image
   - docker run -p 8080:8080 nurbolot02/spring-boot-docker
